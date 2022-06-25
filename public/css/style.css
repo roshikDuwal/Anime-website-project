@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+
+
+
+
+/* Title  */
+
+.main_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-height: 11rem;
+}
+
+.top_side{
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top_side img{
+    width: 133px;
+    height: 111px;
+}
+
+.top_side h1{
+    font-size: 4.5rem;
+}
+
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover{
+    color: red;
+}
+
+
+
+
+
+/*----Search----  */
+.search_form{
+    max-width: 30%;
+    display: flex;
+    margin: 3rem auto;
+    position: relative;
+}
+
+.search_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    color: black;
+    border: 2px solid black;
+    font-size: 1.7rem;
+    border-radius:3rem;
+}
+
+
+.search_form input[type="submit"]{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    border: none;
+    background-color: white;
+    padding: 1rem 0rem;
+    color: black;
+    font-size: 1.6rem;
+    transition:all 0.4s ease-out ;
+}
+
+.search_form input[type="submit"]:hover{
+    color: red;  
+}
+
+.searchcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80vw;
+    justify-content: center;
+  
+}
+
+
+
+
+
+
+/* Navbar  */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.nav-item{
+    padding: 0px 20px;
+    margin: 6px;
+    z-index: 2;
+    
+}
+
+.navbar li a{
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: .96em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    transition:all 0.3s ease-out ;
+}
+
+.navbar li a:hover{
+    color: red;
+}
+.collapse{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* dropbox  */
+.sub-menu-1{
+    display:none ;
+    background-color:white;
+    box-shadow: 0px 4px 27px black;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+.collapse  li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    transition:all 0.4s ease-out ;
+}
+.sub-menu-1  table tr th li {
+    list-style: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size:1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.sub-menu-1  table tr th li:hover{
+    color: red;
+}
+
+.sub-menu-1  table tr th li a {
+    padding: 0 15px ;  
+}
+
+
+
+
+
+
+
+
+/* Body  */
+
+/* TOP BOX  */
+.head{
+    text-align: center;
+    margin:15px 15px 35px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.head h1{
+    font-size: 4rem;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.carousel{
+    width: 75rem;
+    height: 60rem;
+   
+}
+
+.carousel-indicators {
+    bottom: 55rem;
+    left: 55rem;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.carousel-inner{
+    height: 100%;
+    min-width: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-caption{
+    left: 0%;
+    right: 0%;
+    bottom: 0.25rem;
+}
+
+.bottom_bg{
+    background-color: black;
+    color: white;
+}
+
+.carousel-dark .carousel-caption {
+    color: white;
+    background-color: black;
+}
+
+.carousel h5{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.carousel p{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.w-100 {
+    width: 45%!important;
+    margin: auto;
+}
+
+.h-100{
+    height: 86%!important ;
+}
+
+.d-block {
+    display: block!important;
+}
+
+
+
+
+
+
+
+
+/* MIDDLE BOX  */
+.TITLE{
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.TITLE h1{
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2rem;
+   
+ }
+
+ .cover{
+    position: relative;
+    width: 90%;
+    border: none;
+ }
+
+ .cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg,black,transparent);
+ }
+
+ .cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg,black,transparent);
+ }
+
+ #middle_box{
+    padding: 10px;
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 5rem;
+}
+
+#middle_box::-webkit-scrollbar{
+    overflow: hidden;
+    transition: all 2s ease-out;
+}
+
+ #middle_box img{
+    padding: 10px;
+    margin: 10px;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.6s ease-out;
+ }
+ 
+ #middle_box img:hover{
+    transform: scale(1.1);
+ }
+
+ .icon{
+    color:black;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    margin: 0 10px;
+    transition: all 0.2s ease-out;
+ }
+
+ .icon:hover{
+    color: rgb(143, 6, 6);
+ }
+
+
+
+
+
+
+
+
+
+
+ /* TOP ANIME  */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.container h1{
+    margin: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.container h2{
+    margin: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+   
+}
+
+.top-ranking-table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 5px 20px;
+}
+
+.theader{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.rank{
+    font-size: 4rem;
+}
+ 
+.title{
+    font-size: 4rem;
+}
+
+.score{
+    font-size: 4rem;
+}
+
+.bodypart{
+    font-size: 4rem;
+}
+
+.partone img{
+    width: 20rem;
+    height: 30rem;
+    padding: 10px;
+}
+
+.parttwo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.part a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.part a:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* Seasonal box  */
+
+.seasonal_box{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.Cover{
+    width: 90%;
+    display: flex;
+}
+
+#seasonlist_box{
+    padding: 10px 0;
+    display: flex;
+    overflow-x: scroll;
+    margin: 1rem 0 0;
+
+}
+
+#seasonlist_box::-webkit-scrollbar{
+    overflow: hidden;
+    transition: all 2s ease-out;
+}
+
+.seasonlist{
+    border: 2px solid black;
+    margin: 0 10px;
+    text-align: center;
+    padding: 5px 5px 0;
+    width:10rem;
+}
+
+#seasonlist_box button{
+    border: 2px solid black;
+    margin: 0 10px;
+    text-align: center;
+    padding: 5px;
+    width: 22rem;
+    background-color:black;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+#seasonlist_box button:hover{
+    background-color: red;
+    color: black;
+}
+
+.Btn{
+    width: 5%;
+}
+
+#heading{
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+
+}
+
+#seasonalanimelist{
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.seasonbox{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px 3px black;
+    border: none;
+    width: 25rem;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+}
+
+.seasonbox:hover{
+    transform: scale(1.1);
+}
+
+.box_size{
+    height:70%;
+}
+
+.box_size img{
+    width: 20rem;
+    height: 25rem;
+    margin: 10px 0;
+}
+
+.box_title{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    text-align: center;
+}
+
+.box_title h2{
+    font-size: 1.5rem;
+    font-family: 500;
+}
+
+h2 a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s ease-in;
+}
+
+h2 a:hover{
+    color: red;
+}
+
+
+
+
+
+/* footer code  */
+footer{
+    width: 100%;
+    background-color:black;
+
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 3rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+ /* Error  */
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.error h1{
+    font-size: 10rem;
+}
+
+.error p{
+    font-size: 5rem;
+}
+
