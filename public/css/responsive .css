@@ -5,29 +5,24 @@
 @media (max-width: 992px){
     .navbar{
         justify-content: flex-start;
-    
     }
     
     .navbar-expand-lg {
         flex-wrap: nowrap;
     }
-    .collapse li:hover .sub-menu-1{
-        display: block;
-        position: absolute;
-        left: 29rem;
-        top: 6rem;
-        min-height: 69%;
-        transition:all 0.3s ease-out ;
-    }
+
+     
     
+    /* To show the menu without clicking */
+    /*     
     .menu{
         display: none;
     }
     .navbar div:hover .menu{
         display: block;
         transition:all 0.8s ease-out ;
-    }
-    }
+    } */
+}
     
     
     @media(max-width:805px){
@@ -59,37 +54,33 @@
         }
     }
     
-    @media(max-width:603px){
-        .nav-item{
-            font-size: 1.4rem;
+    @media(max-width:600px){
+        .dropdown-menu table tr th li a{
+            font-size: 1rem;
+            padding: 0;
         }
-        .sub-menu-1  table tr th li{
-            font-size: 1.2rem;
+
+        .dropclass{
+            width: 65px;
+            text-align: center;
         }
-    
-        .collapse li:hover .sub-menu-1{
-            display: block;
-            position: absolute;
-            left: 23rem;
-            top: 6rem;
-            min-height: 69%;
-            transition:all 0.3s ease-out ;
+
+        .dropclass li {
+            padding: 0;
         }
+
+        table{
+            height: 8rem;
+            width:30rem;
+        }
+        
     }
     
     
-    
-    @media(max-width:450px){
-        .collapse li:hover .sub-menu-1{
-            display: block;
-            position: absolute;
-            left: 12rem;
-            top: 6rem;
-            min-height: 69%;
-            transition:all 0.3s ease-out ;
-        }
-    }
-    
+
+
+
+
     /* body  */
     
     @media(max-width:655px){
@@ -107,7 +98,8 @@
         }
         .container h1{
             display: block;
-            margin: 5rem;
+            margin: 1rem;
+            font-size: 2rem;
         }
     
     }
@@ -160,4 +152,71 @@
          }
     }
     
-    
+
+
+
+
+
+
+    /* TOP ANIME */
+
+    @media(max-width:540px){
+        .rank{
+            font-size: 2rem;
+            width: 0;
+        }
+        .title{
+            font-size: 2rem;
+            width: 0;
+        }
+        .score{
+            font-size: 2rem;
+            width: 0;
+        }
+
+        .partone img{
+            width: 10rem;
+            height: 15rem;
+            padding: 10px;
+        }
+
+        .container h2{
+            margin: 1rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        h3{
+            font-size: 1rem;
+        }
+
+        h4{
+            font-size: 1rem;
+        }
+    }
+
+
+
+    /* SEASONAL ANIME  */
+
+    @media(max-width:552px){
+        #seasonlist_box button {
+            margin: 0px 4px;
+            font-size: 1rem;
+        }
+
+        .seasonbox{
+            width: 13rem;
+            height: 25rem;
+        }
+
+        .box_size img {
+            width: 10rem;
+            height: 15rem;
+        }
+
+        .box_title h2{
+            font-size: 0.8rem;
+        }
+    }
