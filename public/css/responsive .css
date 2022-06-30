@@ -212,11 +212,15 @@
         }
 
         .box_size img {
-            width: 10rem;
-            height: 15rem;
+            width: 9rem;
+            height: 13rem;
         }
 
         .box_title h2{
+            font-size: 0.8rem;
+        }
+
+        .box_title h5{
             font-size: 0.8rem;
         }
     }
